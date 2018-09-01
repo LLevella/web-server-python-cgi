@@ -13,6 +13,7 @@ signin_tmp = '''
         <title>Страница входа | Тестовое задание </title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+    </head>
     <body class="text-center">
         <form class="form-signin" action="index.py" method="post">
             <h1 class="h3 mb-3 font-weight-normal">Войдите, пожалуйста</h1>
@@ -44,6 +45,7 @@ signin_err_tmp = '''
         <title>Ошибка входа | Тестовое задание </title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+    </head>
     <body class="text-center">
         <div class="container">
             <div class="row">
@@ -77,6 +79,7 @@ signin_ok_tmp = '''
         <title>ok входа | Тестовое задание </title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+    </head>
     <body class="text-center">
         <div class="container">
             <div class="row">
