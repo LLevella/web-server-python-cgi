@@ -44,7 +44,16 @@ body {
   border-top-right-radius: 0;
 }
 #progress-test{
+  position: relative;
   display: none;
+}
+#progress-text.text-center
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 #progress-test.visible{
   display: block;

@@ -76,7 +76,7 @@ signin_ok_tmp = '''
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Тестовое задание">
-        <title>ok входа | Тестовое задание </title>
+        <title>Основная страница | Тестовое задание </title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -104,15 +104,19 @@ signin_ok_tmp = '''
             <div class="row" id="test">
                 <div class="col-xs-3"></div>
                 <div class="col-xs-6">
-                    <div id="progress-test" class="progress">
-                        <div id="progress-bar-test" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="30">
-                        Осталось <span id="seconds">30</span> секунд
+                    <div id="progress-test">
+                        <div class="progress">
+                            <div id="progress-bar-test" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="30">
+                            </div>
+                        </div>
+                        <div id="progress-text" class="text-center font-weight-bold">
+                            <p class="text-success"> Осталось <span id="seconds"></span> секунд</p>
                         </div>
                     </div>
                     <div id="rand-result">
                         <div class="alert alert-success" role="alert">
                             <h4 class="alert-heading">Результат теста линии:</h4>
-                            <p> <span id="impuls"> {} </span> импульсов </p>
+                            <p> <span id="impuls"></span> импульсов </p>
                         </div>
                     </div>                 
                 </div>
