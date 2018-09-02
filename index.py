@@ -30,13 +30,12 @@ if __name__ == "__main__":
     user_key = form.getfirst(name_user_key, "")
     ph = PostHandler(name_user_key)
 
+    # возьмем ключ из куков 
     ch = CookieHandler()
     cookie = http.cookies.SimpleCookie(os.environ.get("HTTP_COOKIE"))
     hash_key_value = cookie.get("key")
-    
     if hash_key_value is not None:
         hash_key_value = hash_key_value.value
-   
     user_by_cookie = ch.find_cookie(hash_key_value)
 
     if user_key == "":
@@ -80,7 +79,6 @@ if __name__ == "__main__":
                 else:
                     print_function(signin_err_tmp)
                     ph.delete_post_data(user_key)
-            
         else:
         # если ключ не найден
             action_empty(user_by_cookie)
